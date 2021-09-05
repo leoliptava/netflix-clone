@@ -1,0 +1,112 @@
+.feature {
+    height: 80vh;
+}
+
+.featureVertical {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to top, #111 10%, transparent 90%);
+}
+
+.featureHorizontal {
+    width: inherit;
+    height: inherit;
+    background: linear-gradient(to right, #111 30%, transparent 70%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.featureName {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.featureInfo {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.featurePoints,
+.featureYear,
+.featureSeasons {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.featurePoints {
+    color: #46d369;
+}
+
+.featureDescription {
+    margin-top: 15px;
+    font-size: 20px;
+    color: #999;
+    max-width: 40vw;
+}
+
+.featureButtons {
+    margin-top: 15px;
+}
+
+.featureWhatchButton,
+.featureMyListButton {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: all .2s;
+    opacity: 1;
+}
+
+.featureWhatchButton:hover,
+.featureMyListButton:hover {
+    opacity: .7;
+}
+
+.featureWhatchButton {
+    color: #000;
+    background-color: #FFF;
+}
+
+.featureMyListButton {
+    color: #FFF;
+    background-color: #333;
+}
+
+.featureGenres {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #999;
+}
+
+
+@media (max-width:760px) {
+    .featureName {
+        font-size: 35px;
+    }
+
+    .featureInfo {
+        font-size: 16px;
+    }
+
+    .featureDescription {
+        font-size: 14px;
+        max-width: 100%;
+        margin-right: 30px;
+    }
+
+    .featureWhatchButton,
+    .featureMyListButton {
+        font-size: 16px;
+    }
+
+    .featureGenres {
+        font-size: 14px;
+    }
+  }

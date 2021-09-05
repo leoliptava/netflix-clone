@@ -11,6 +11,44 @@ a {
   text-decoration: none;
 }
 
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 7px;
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #FFF;
+  border-radius: 30px;
+}
+
+
 * {
   box-sizing: border-box;
+}
+
+header {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  background: transparent;
+  transition: all ease 0.5s;
+}
+
+body {
+  background-color: #111;
+  color: #FFF;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+footer {
+  text-align: center;
 }
