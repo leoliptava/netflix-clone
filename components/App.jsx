@@ -65,7 +65,10 @@ export default function App () {
           <footer>
             Feito por Leonardo Felipe <br />
             Direitos de Imagens para Netflix <br />
-            Dados retirados do site Themoviedb.org
+            Este produto usa a API TMDB, mas não é endossado ou certificado por TMDB.
+            
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="tmdb-logo.svg" alt="TBMD" />
           </footer>
 
           
