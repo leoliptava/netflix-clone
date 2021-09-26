@@ -5,9 +5,10 @@ import MovieRow from "./MovieRow";
 import FeatureMovie from "./FeatureMovie";
 import Header from "./Header";
 
-
 export default function App () {
 
+
+  
   const [movieList, setMovieList] = useState([])
   const [featureData, setfeatureData] = useState(null)
   const [blackHeader, setblackHeader] = useState(false)
@@ -17,6 +18,7 @@ export default function App () {
       // Pegando a lista TOTAL
       let list = await Tbmd.getHomeList()
 
+      console.log(setMovieList)
       setMovieList(list)
 
       //PEGANDO O FEATURE
